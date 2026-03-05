@@ -1,0 +1,4 @@
+GAC
+TAG
+TGA
+TAA
