@@ -87,7 +87,7 @@ function renderPretty(d){
 
   <div class="freq-table">
   <div class="freq-row" style="grid-template-columns:1fr;">
-  <div style="font-family:'DM Mono', monospace; letter-spacing:0.1em;">
+  // <div style="font-family:'DM Mono', monospace; letter-spacing:0.1em;">
   ${d.rna || "—"}
   </div>
   </div>
