@@ -7,9 +7,12 @@ egen
 folder [static] {
 logo.png
 style.css
+flu_detector.css
 script.js
 }
 
 folder [templates] {
 index.html
+flu-detector.html
+main.html
 }
