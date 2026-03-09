@@ -1,0 +1,146 @@
+.main-layout{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:0;
+    min-height:calc(100vh - 121px);
+}
+
+.input-panel{
+    padding:56px 64px;
+    border-right:1px solid #e8e8e6;
+    display:flex;
+    flex-direction:column;
+    gap:32px;
+}
+
+.results-panel{
+    padding:56px 64px;
+    display:flex;
+    flex-direction:column;
+    gap:32px;
+    background:#ffffff;
+}
+
+.panel-header{
+    font-size:28px;
+    margin-bottom:20px;
+}
+
+.patient-count-row{
+    display:flex;
+    align-items:center;
+    gap:15px;
+    margin-bottom:20px;
+}
+
+.patient-count-row input{
+    width:70px;
+    padding:6px;
+}
+
+.btn-generate{
+    background:black;
+    color:white;
+    border:none;
+    padding:10px 18px;
+    cursor:pointer;
+}
+
+.btn-diagnose{
+    margin-top:20px;
+    background:black;
+    color:white;
+    border:none;
+    padding:12px 20px;
+    cursor:pointer;
+}
+
+.btn-generate:hover{
+    background:#333;
+}
+
+.btn-diagnose:hover{
+    background:#333;
+}
+
+.patient-form{
+    background:white;
+    border:1px solid #ddd;
+    padding:15px;
+    margin-bottom:15px;
+}
+
+.form-row{
+    margin-bottom:10px;
+}
+
+.form-row label{
+    display:block;
+    font-size:14px;
+    margin-bottom:4px;
+}
+
+.form-row input{
+    width:100%;
+    padding:8px;
+    border:1px solid #ccc;
+}
+
+.result-placeholder{
+    color:#888;
+    font-style:italic;
+}
+
+.result-card{
+    background:white;
+    border-left:4px solid #333;
+    padding:15px;
+    margin-bottom:10px;
+}
+
+.status-ok{
+    border-left-color:green;
+}
+
+.status-low{
+    border-left-color:orange;
+}
+
+.status-mid{
+    border-left-color:darkorange;
+}
+
+.status-high{
+    border-left-color:red;
+}
+
+.info-section{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:0;
+    border-top:1px solid #e8e8e6;
+}
+
+.info-left{
+    padding:56px 64px;
+    border-right:1px solid #e8e8e6;
+    background:#ffffff;
+}
+
+.info-right{
+    padding:56px 64px;
+    background:#ffffff;
+}
+
+.legend-row{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:12px 0;
+    border-bottom:1px solid #bfbfbf;
+    font-size:18px;
+}
+
+.legend-row:last-child{
+    border-bottom:none;
+}
