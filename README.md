@@ -1,5 +1,5 @@
 Hey guys! 
-This project is an expanded version of my backend program with DNA sequence analyzer 
+This project is an expanded version of my backend program with DNA sequence analyzer. Files will be moved to new folders
 
 Project structure - 
 egen 
