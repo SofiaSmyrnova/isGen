@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>eGen – Flu Detector</title>
+
+    <link rel="stylesheet" href="/static/style.css">
+    <link rel="stylesheet" href="/static/flue_detector.css">
+</head>
+
+<body>
+<header>
+    <img class="logo" src="/static/logo.png" alt="Logo">
+
+    <nav>
+        <a href="/templates/main.html">Main</a>
+        <a href="#">About Project</a>
+        <a href="#">Creator</a>
+    </nav>
+</header>
+
+<div class="page-title">
+    <h1>єGen</h1>
+    <span>Flu Risk Detector</span>
+</div>
+
+
+
+    <main class="main-layout">
+
+        <section class="input-panel">
+
+            <div class="panel-header">
+                Patient input
+            </div>
+
+
+            <div class="panel-body">
+
+                <div class="patient-count-row">
+
+                    <label>
+                        Number of patients
+                    </label>
+
+                    <input
+                        type="number"
+                        id="count-input"
+                        min="1"
+                        max="20"
+                        value="1"
+                    >
+
+                    <button
+                        class="btn-generate"
+                        onclick="generatePatients()"
+                    >
+                        Generate
+                    </button>
+
+                </div>
+
+
+                <div id="patients-forms">
+
+                </div>
+
+
+                <div class="diagnose-block">
+
+                    <button
+                        class="btn-diagnose"
+                        onclick="diagnosePatients()"
+                    >
+                        Run diagnostics
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <section class="results-panel">
+
+            <div class="panel-header">
+                Results
+            </div>
+
+            <div class="panel-body">
+
+                <div id="results-list">
+
+                    <div class="result-placeholder">
+                        Results will appear here
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+    <section class="info-section">
+
+        <div class="info-left">
+
+            <h2>
+                εGen flu diagnostic module
+            </h2>
+
+            <p>
+                This module evaluates two critical health indicators:
+                body temperature and oxygen saturation.
+                Based on these parameters, the system detects possible
+                flu-like conditions and respiratory risks.
+            </p>
+
+        </div>
+
+
+        <div class="info-right">
+
+            <div class="legend-row">
+                <span>Normal temperature</span>
+                <span>36.0 – 37.9 °C</span>
+            </div>
+
+            <div class="legend-row">
+                <span>Fever</span>
+                <span>≥ 38.0 °C</span>
+            </div>
+
+            <div class="legend-row">
+                <span>Normal oxygen saturation</span>
+                <span>≥ 95 %</span>
+            </div>
+
+            <div class="legend-row">
+                <span>Reduced saturation</span>
+                <span>≤ 94 %</span>
+            </div>
+
+            <div class="legend-row">
+                <span>Critical saturation</span>
+                <span>≤ 92 %</span>
+            </div>
+
+        </div>
+
+    </section>
+
+
+</div>
+
+
+<script src="/static/flue_detector.js"></script>
+
+</body>
+</html>
