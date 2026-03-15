@@ -4,10 +4,20 @@ from main import analyze_for_web, load_db
 app = Flask(__name__)
 DESCRIPTIONS, KNOWN_MUTATIONS = load_db()
 
-
 @app.route("/")
-def home():
+def index():
     return render_template("index.html")
+
+@app.route("/main")
+def main():
+    return render_template("main.htm")
+
+@app.route("/flu")
+def flu():
+    return render_template("flu_detector.html")
+
+if __name__ == "__main__":
+    app.run(debug=True)
 
 
 @app.route("/analyze", methods=["POST"])
